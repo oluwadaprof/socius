@@ -1,5 +1,6 @@
 import cssText from "data-text:~style.css"
 import type { PlasmoCSConfig } from "plasmo"
+import CustomContainer from "~CustomContainer"
 
 import { CountButton } from "~features/count-button"
 
@@ -39,8 +40,8 @@ export const getStyle = (): HTMLStyleElement => {
 
 const PlasmoOverlay = () => {
   return (
-    <div className="plasmo-z-50 plasmo-flex plasmo-fixed plasmo-top-32 plasmo-right-8">
-      <CountButton />
+    <div className="plasmo-z-50 plasmo-fixed plasmo-top-0 plasmo-right-0 plasmo-h-screen plasmo-w-full plasmo-bg-transparent">
+      <CustomContainer/>
     </div>
   )
 }
