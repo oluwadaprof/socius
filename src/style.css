@@ -19,7 +19,7 @@
   width: 30rem;
 }
 
-/* body{
+body{
   margin-left: 10rem;
   min-height: 100vh;
 }
@@ -29,13 +29,19 @@
   min-height: 100vh;
   width: 20rem;
   background:red;
-}  */
+} 
 
-:host(plasmo-csui){
+#plasmo-shadow-container {
+  z-index: 99999;
+  width: 30rem;
+  height: 100vh;
+}
+
+/* :host(plasmo-csui){
   min-height: 100vh !important;
   width: 20rem !important;
   background:red !important;
-}
+} */
 
 .plasmo-bg-transparent {
   background-color: transparent;
